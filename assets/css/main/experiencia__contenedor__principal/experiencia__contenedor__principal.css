@@ -16,7 +16,9 @@
     font-family: var(--font-family-zen);
     padding: 3rem 0 2rem 0;
 }
-
+.experiencia__titulo{
+font-size: var(--font-size-h2);
+}
 .experiencia__card {
     display: flex;
     padding: 15px 0 25px 0;
@@ -26,10 +28,6 @@
     flex-direction: row-reverse;
 }
 
-.experiencia__info {
-    padding: 1rem;
-    align-self: center;
-}
 
 .experiencia__img__impar {
     display: none;
@@ -110,3 +108,35 @@
 .experiencia__img__par.activa {
     animation-play-state: running;
 }*/
+
+.experiencia__info {
+    margin: 1rem;
+    padding: 1rem;
+    align-self: center;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    width: 330px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiencia__descripcion__button {
+    width: 120px;
+    height: 30px;
+    background-color: var(--color-negro);
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .4s;
+    margin: 1rem;
+    color:var(--color-blanco);
+  }
+  
+  .experiencia__descripcion__button:hover {
+    box-shadow: 5px 6px 0px var(--color-blanco);
+  }
