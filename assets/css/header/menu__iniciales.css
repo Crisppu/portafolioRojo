@@ -1,0 +1,13 @@
+.menu__iniciales {
+    display: flex;
+    padding-top: 1rem;
+}
+.menu__logo{ width: 100px; height: 100px;
+}
+.menu__iniciales__letras {
+    align-self: center;
+    font-family: var(--font-family-iniciales);
+    font-weight: bold;
+    font-size: var(--font-size-iniciales);
+    color: var(--color-blanco);
+}

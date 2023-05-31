@@ -1,0 +1,37 @@
+:root{
+    /*colores del reto*/
+   --color-blanco1:white;
+   --cor-de-link: #acaaaa;
+   --color-texto-nav-a:#812121;
+
+
+/*https://www.veronicasolomon.com/*/
+/*mio*/
+--color-blanco:#ffffff;
+--color-f0:#03071E;
+--color-negro:#000000;
+
+
+--color-naranja12:#FFAA00;
+
+--font-size-iniciales:2.5rem;
+--font-size-h1:1.75rem;
+--font-size-h2:1.5rem;/*24px*/
+--font-size-h3:1.25rem;/*20px*/
+--font-size-h4:1rem; /*16px*/
+
+
+--font-family-body: "Montserrat",cursive;
+--font-family-montserrat: "Montserrat",cursive;
+--font-family-letra: "Pacifico", cursive;
+--font-family-iniciales: 'Zen Dots', cursive;
+--font-family-zen: 'Zen Dots', cursive;
+--font-family-nav: 'Zen Dots', cursive;
+
+--color-rojoA:#940013;
+--color-rojoN:#350007;
+--color-Rojo3:#850305;
+--color-azulPalido:#1875FF;
+--color-azulFuerte:#00406F;
+
+}

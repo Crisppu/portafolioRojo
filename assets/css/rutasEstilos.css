@@ -1,0 +1,24 @@
+/*fondoHeaderBanner*/
+@import url(./fondoHeaderBanner/fondo__principal__luna.css);
+
+/*header*/
+@import url(./header/header__contenedor.css);
+@import url(./header/menu__iniciales.css);
+@import url(./header/menu__nav.css);
+@import url(./header/menu__lista.css);
+
+
+/*banner*/
+@import url(./banner/banner__contenedor__principal.css);
+@import url(./banner/banner__biografia.css);
+
+/*sobreMi*/
+@import url(./main/sobreMi__contenedor__principal/sobreMi__contenedor__principal.css);
+/*skills and hobbies*/
+@import url(./main/skills__contenedor__principal/skills__contenedor__principal.css);
+
+/*formacion academica*/
+@import url(./main/formacion__academica/formacion__academica__contenedor__principal.css);
+
+/*experiencia xp*/
+@import url(./main/experiencia__contenedor__principal/experiencia__contenedor__principal.css);

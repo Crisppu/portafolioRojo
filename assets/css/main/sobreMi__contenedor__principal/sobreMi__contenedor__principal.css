@@ -1,0 +1,45 @@
+.sobreMi__contenedor__principal {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    background: #850305;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0A0102, #850305);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0A0102, #850305); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: var(--color-blanco);
+}
+
+.sobreMi__contenedor {
+    display: flex;
+    justify-content:flex-end;
+    width: 700px;
+}
+.sobreMi__contenedor__descripcionProfesional{
+display:flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+.sobreMi__titulo {
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    font-family: var(--font-family-body);
+
+}
+
+.sobreMi__parrafo {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-h4);
+    white-space: pre-line;
+}
+.sobreMi__parrafo:nth-child(3){
+  padding-top: 10px;
+}
+.sobreMi__contenedor__Arania{
+display: flex;
+align-self: center;
+}
+.sobreMi__img__hombreArania{
+width: 260px;
+height: 290px;
+
+}

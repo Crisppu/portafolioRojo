@@ -1,0 +1,27 @@
+.menu__lista {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__lista__item:last-child{
+    margin-right: 2rem;
+}
+
+.menu__lista__item {
+    list-style: none;
+    height: 5.625rem; /*90px*/
+    border: 2px solid transparent;
+    display: flex;
+    align-items: flex-end;
+}
+.menu__link {
+    font-family: var(--font-family-nav);
+    margin-right: 1rem;
+    text-transform: lowercase;
+    font-size: var(--font-size-h4);
+    color: var(--color-blanco);
+
+}
+
+.menu__lista__item:hover {
+    border-top: 2px solid var(--color-blanco);
+}

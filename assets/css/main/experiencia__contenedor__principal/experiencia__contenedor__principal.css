@@ -1,0 +1,112 @@
+.experiencia__contenedor__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../img/xp__fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-blanco);
+
+}
+
+.experiencia__contenedor__titulo {
+    color: var(--color-blanco);
+    font-size: 42px;
+    font-family: var(--font-family-zen);
+    padding: 3rem 0 2rem 0;
+}
+
+.experiencia__card {
+    display: flex;
+    padding: 15px 0 25px 0;
+}
+
+.experiencia__card:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.experiencia__info {
+    padding: 1rem;
+    align-self: center;
+}
+
+.experiencia__img__impar {
+    display: none;
+}
+
+.experiencia__img__impar.activa {
+    display: block;
+    animation: slide-in-left 5.5s alternate  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-left 5.5s alternate  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.experiencia__img__impar.activa1 {
+    display: block;
+    animation: slide-in-right 5.5s alternate  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-right 5.5s alternate  cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+}
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*
+.experiencia__img__par.activa {
+    animation-play-state: running;
+}
+*/
+/*
+.experiencia__img__par {
+    animation: slide-in-right 5.5s alternate infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-right 5.5s alternate infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+}
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.experiencia__img__par.activa {
+    animation-play-state: running;
+}*/

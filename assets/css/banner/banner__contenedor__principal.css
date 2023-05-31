@@ -1,0 +1,8 @@
+.banner__contenedor__principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: var(--color-blanco);
+  height: 62vh; /*380px*/
+}

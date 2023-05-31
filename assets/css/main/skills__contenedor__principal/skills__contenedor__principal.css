@@ -1,0 +1,117 @@
+
+
+
+.Skills__contenedor__principal{
+display: flex;
+flex-direction: column;
+width: 100%;
+background-image:url(../../../img/imgArania.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+
+
+}
+.skills__contenedor {
+  width: 80vw;
+align-self: center;
+}
+.skills__titulo,.hobbies__titulo{
+text-align: center;
+color: var(--color-blanco);
+font-size: 42px;
+font-family: var(--font-family-zen);
+padding: 3rem 0 2rem 0;
+}
+
+.skills__contenedor__listado {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*box-shadow: 0 0 20px 8px #d0d0d0;*/
+.skills__card {
+  height: 254px;
+  width: 190px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1rem;
+}
+
+.skills__card__img {
+  height: 100%;
+  width: 100%;
+  background: var(--color-blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skills__card__informacion {
+  position: absolute;
+  background: var(--color-blanco);  /* fallback for old browsers */
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  height: 15%;
+  padding-top: 0.5rem;
+  width: 190px;
+  text-align: center;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.skills__card__titulo {
+  font-size: var(--font-size-h2);
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+}
+
+
+.skills__card:hover .skills__card__informacion {
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+
+/*hobbies*/
+.hobbies__contenedor__principal{
+margin-bottom: 1rem;
+align-self: center;
+}
+
+.hobbies__contenedor__listado {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 850px;
+}
+.hobbies__card{
+width: 130px;
+height: 135px;
+background-color: var(--color-blanco);
+margin-top: 1rem;
+margin-right: 0.5rem;
+display: flex;
+justify-content: center;
+}
+.hobbies__card__titulo{
+text-align: center;
+font-family: var(--font-family-montserrat);
+}

@@ -1,0 +1,10 @@
+.fondo__principal__luna {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(../../img/hombre__arania.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-position: 100% 70%;
+    height: 100vh;
+    
+}
+

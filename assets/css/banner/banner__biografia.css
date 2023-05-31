@@ -1,0 +1,149 @@
+.banner__contenedor__biografia {
+    width: 40%;
+}
+
+.banner__tituloPresentacion {
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+}
+
+
+.banner__tituloSubseccion {
+    font-size: var(--font-size-h4);
+    white-space: pre-line;
+}
+
+.banner__tituloOracleOne {
+    color: var(--color-naranja12);
+    font-weight:600;
+}
+
+/*lista banner*/
+.banner__lista__network {
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.banner__lista__network__item {
+    padding-right: 1rem;
+}
+
+.titulo__link:hover {
+    text-decoration: underline;
+}
+
+.button__link {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: #1875FF;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    -webkit-box-shadow: 0px 14px 56px -11px #1875FF;
+    box-shadow: 0px 14px 56px -11px #1875FF;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+    height: 20px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+
+}
+
+.button__link .button__link__descargar {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.button__link .button__link__descargar:after {
+    content: 'CV';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.button__link:hover .button__link__descargar {
+    padding-right: 2em;
+}
+
+.button__link:hover .button__link__descargar:after {
+    opacity: 4;
+    right: 0;
+}
+
+/*contenedor profile*/
+
+.banner__shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(45deg, var(--color-rojoA) 0%, var(--color-rojoN) 100%);
+    animation: morph 5s ease-in-out infinite;
+    border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+    -webkit-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+    -moz-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+    -ms-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+    -o-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    z-index: 10;
+    -webkit-animation: morph 5s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -webkit-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -moz-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -ms-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -o-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        background: linear-gradient(45deg, var(--color-rojoA) 0%, var(--color-rojoN) 100%);
+    }
+
+    50% {
+        border-radius: 57% 43% 61% 39% / 43% 45% 55% 57%;
+        background: linear-gradient(45deg, var(--color-rojoA) 0%, var(--color-rojoN) 100%);
+        -webkit-border-radius: 57% 43% 61% 39% / 43% 45% 55% 57%;
+        -moz-border-radius: 57% 43% 61% 39% / 43% 45% 55% 57%;
+        -ms-border-radius: 57% 43% 61% 39% / 43% 45% 55% 57%;
+        -o-border-radius: 57% 43% 61% 39% / 43% 45% 55% 57%;
+    }
+
+    100% {
+        border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -webkit-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -moz-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -ms-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        -o-border-radius: 63% 37% 53% 47% / 52% 70% 30% 48%;
+        background: linear-gradient(45deg, var(--color-rojoA) 0%, var(--color-rojoN) 100%);
+    }
+}
+
+.banner__img__profile {
+    height: 240px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
