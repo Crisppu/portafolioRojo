@@ -18,7 +18,7 @@
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
-    background: linear-gradient(30deg,  var(--color-verdeAlien),var(--color-verde1));
+    background: linear-gradient(30deg,  var(--color-rojoA),var(--color-rojoN));
 }
 ::-webkit-scrollbar:horizontal{
 display: none;

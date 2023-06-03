@@ -8,8 +8,9 @@
 @import url(./header/menu__lista.css);
 
 /*scroll suave*/
-@import url(./base/scroll/scroll_html.css);
-
+@import url(./base/scroll/scroll__behavior__html.css);
+/*scroll barra horizontal*/
+@import url(./base/scroll/scroll__barra.css);
 
 /*banner*/
 @import url(./banner/banner__contenedor__principal.css);
