@@ -1,5 +1,4 @@
 const $form = document.querySelector('[data-form]');
-console.log($form)
 $form.addEventListener("submit", function ejecutarSiHayUnSubmit(evento) {
   evento.preventDefault();
 
