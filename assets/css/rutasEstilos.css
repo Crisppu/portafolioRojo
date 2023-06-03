@@ -7,6 +7,9 @@
 @import url(./header/menu__nav.css);
 @import url(./header/menu__lista.css);
 
+/*scroll suave*/
+@import url(./base/scroll/scroll_html.css);
+
 
 /*banner*/
 @import url(./banner/banner__contenedor__principal.css);
