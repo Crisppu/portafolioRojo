@@ -35,4 +35,3 @@ function activarScrollPorElemento(section) {
 // Ejemplo de uso
 activarScrollPorElemento(".experiencia__contenedor");
 
-
