@@ -1,0 +1,14 @@
+.footer__contenedor__principal{
+display: flex;
+justify-content: center;
+color: var(--color-blanco);
+background-color: var(--color-negro);
+height: 50px;
+}
+.footer__contenedor{
+align-self:center;
+}
+
+.footer__subtexto{
+text-align: center;
+}
