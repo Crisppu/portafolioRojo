@@ -2,12 +2,12 @@
 
     /*este body eliminar es solo para phone*/
     body {
-        background-color: aliceblue;
+        background-color: var(--color-negro);
     }
 
 
     .header__contenedor {
-        height: 20vh;
+        height: 26vh;
     }
 
 
@@ -28,6 +28,7 @@
     .menu__lista {
         position: fixed;
         width: 100%;
+        height: calc(100vh - 20vh);
         top: -100%;
         transition: all .4s;
         -webkit-transition: all .4s;

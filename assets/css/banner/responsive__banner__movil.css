@@ -1,0 +1,49 @@
+@media screen and (max-width:858px) {
+    .banner__contenedor__principal {
+        height: var(100vh - 20vh);
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .banner__contenedor__biografia {
+        width: 90%;
+    }
+
+    .banner__lista__network {
+        height: 70px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .titulo__link:hover {
+        text-decoration-color: var(--color-rojoA);
+    }
+
+    .button__link {
+        all: unset;
+    }
+
+    .button__link .button__link__descargar:after {
+        content: 'CV➥';
+        position: initial;
+        opacity: initial;
+    }
+
+    .button__link:hover .button__link__descargar {
+        padding-right: initial;
+    }
+
+    .button__link__descargar:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-rojoA);
+    }
+
+    .banner__shape {
+        background: none;
+        animation: none;
+        border-radius: initial;
+    }
+
+
+
+}

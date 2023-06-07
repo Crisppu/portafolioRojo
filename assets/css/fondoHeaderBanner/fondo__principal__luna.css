@@ -8,3 +8,10 @@
     
 }
 
+@media screen and (max-width:858px) {
+.fondo__principal__luna{
+background-image: none;
+
+}
+
+}

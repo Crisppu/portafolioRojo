@@ -37,3 +37,9 @@
 /*url responsive*/
 /*header-movil*/
 @import url(./header/responsive__header__movil.css);
+
+/*banner-movil*/
+@import url(./banner/responsive__banner__movil.css);
+
+/*sobreMovil-movil*/
+@import url(./main/sobreMi__contenedor__principal/responsive__sobreMi__movil.css);
