@@ -1,0 +1,77 @@
+@media screen and (max-width:858px) {
+
+    /*este body eliminar es solo para phone*/
+    body {
+        background-color: aliceblue;
+    }
+
+
+    .header__contenedor {
+        height: 20vh;
+    }
+
+
+    .menu__iniciales {
+        padding-left: 1rem;
+    }
+
+    .menu__logo {
+        display: none;
+    }
+
+    .menu__nav {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+
+    .menu__lista {
+        position: fixed;
+        width: 100%;
+        top: -100%;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        -ms-transition: all .4s;
+        -o-transition: all .4s;
+        flex-direction: column;
+        background: var(--color-blanco);
+
+
+    }
+
+    .menu__lista__item {
+        align-items: center;
+        align-self: center;
+        border: none;
+    }
+
+    .menu__lista__item.activo:hover,
+    .menu__lista__item:hover {
+        border-top-style: none;
+        background-color: rgba(238, 211, 211, .5);
+        width: 100%;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .menu__lista__item:last-child {
+        margin-right: 0;
+    }
+
+    .menu__link,
+    .menu__link.activo {
+        font-size: 20px;
+        color: var(--color-f1);
+        font-weight: bold;
+    }
+
+
+    .menu__bars__img {
+        display: inline-flex;
+        align-self: center;
+        cursor: pointer;
+        padding: 1rem 1rem;
+    }
+}

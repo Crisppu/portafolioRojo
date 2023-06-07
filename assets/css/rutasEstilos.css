@@ -33,3 +33,7 @@
 @import url(./footer/footer__contenedor__principal.css);
 /*borrar mensaje que todavía no esta responsivo*/
 @import url(./body.css);
+
+/*url responsive*/
+/*header-movil*/
+@import url(./header/responsive__header__movil.css);
