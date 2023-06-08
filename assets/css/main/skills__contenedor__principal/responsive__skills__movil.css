@@ -1,55 +1,63 @@
-.Skills__contenedor__principal {
-    background-image: none;
-}
+@media screen and (max-width:858px) {
+    .Skills__contenedor__principal {
+        background-image: none;
+    }
 
-.skills__contenedor {
-    align-self: auto;
-    width: 100%;
-}
+    .skills__contenedor {
+        width: 100%;
+    }
 
-.skills__titulo {
-    text-align: center;
-}
+    .skills__titulo {
+        text-align: center;
+    }
 
-.skills__contenedor__listado {
-    width: 400px;
-    justify-content: start;
-}
+    .skills__contenedor__listado {
+        width: 400px;
+        justify-content: start;
+    }
 
-.skills__card {
-    height: 190px;
-    width: 155px;
-    position: static;
-    transition: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-}
+    .skills__card {
+        height: 190px;
+        width: 155px;
+        position: static;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    }
 
-.skills__card__img {
-    align-items: start;
-}
+    .skills__card__img {
+        align-items: start;
+    }
 
-.skills__card__informacion {
-    position: absolute;
-    height: auto;
-    width: auto;
-    padding-top: 0;
-    background-color: initial;
-    text-align: center;
-    transition: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    padding-bottom: .5rem;
-}
+    .skills__card__informacion {
+        position: absolute;
+        height: auto;
+        width: auto;
+        padding-top: 0;
+        background-color: initial;
+        text-align: center;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        padding-bottom: .5rem;
+    }
 
-.skills__card:hover .skills__card__informacion {
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
+    .skills__card:hover .skills__card__informacion {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    /*hobbies*/
+    .hobbies__contenedor__listado {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 350px;
+      }
 }

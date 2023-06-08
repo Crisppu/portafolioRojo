@@ -4,6 +4,7 @@
 .Skills__contenedor__principal{
    display: flex;
    flex-direction: column;
+   align-items: center;
    width: 100%;
    background-image:url(../../../img/imgArania.jpg);
    background-repeat: no-repeat;
@@ -17,7 +18,6 @@
 }
 .skills__contenedor {
   width: 80vw;
-align-self: center;
 }
 .skills__titulo,.hobbies__titulo{
 text-align: center;
@@ -96,7 +96,6 @@ padding: 3rem 0 2rem 0;
 /*hobbies*/
 .hobbies__contenedor__principal{
 margin-bottom: 1rem;
-align-self: center;
 }
 
 .hobbies__contenedor__listado {
