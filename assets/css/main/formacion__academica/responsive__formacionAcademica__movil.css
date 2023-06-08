@@ -1,0 +1,23 @@
+@media screen and (max-width:858px) {
+    .formacion__academica__contenedor {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .formacion__academica__card {
+        width: 200px;
+    }
+
+    .card-button {
+        transform: initial;
+        left: 20%;
+        bottom: 8px;
+        opacity: initial;
+    }
+
+    .formacion__academica__card:hover .card-button {
+        transform: initial;
+    }
+}
