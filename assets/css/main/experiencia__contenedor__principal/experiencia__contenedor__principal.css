@@ -17,10 +17,6 @@
     padding: 3rem 0 2rem 0;
 }
 
-.experiencia__titulo {
-    font-size: var(--font-size-h2);
-}
-
 .experiencia__card {
     display: flex;
     padding: 15px 0 25px 0;
@@ -38,6 +34,9 @@
     display:flow-root;
     animation: slide-in-left 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     -webkit-animation: slide-in-left 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.experiencia__titulo {
+    font-size: var(--font-size-h2);
 }
 
 @keyframes slide-in-left {

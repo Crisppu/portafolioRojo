@@ -1,4 +1,7 @@
 @media screen and (max-width:858px) {
+    .formacion__academica__contenedor__principal {
+        border-radius: 50px 50px ;
+    }
     .formacion__academica__contenedor {
         flex-direction: column;
         align-items: center;
