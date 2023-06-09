@@ -49,3 +49,5 @@
 @import url(./main/formacion__academica/responsive__formacionAcademica__movil.css);
 /*xp movil*/
 @import url(./main/experiencia__contenedor__principal/responsive__experiencia__movil.css);
+/*formcontacto movil */
+@import url(./main/formContacto__contenedor__principal/responsive__formContacto__movil.css);

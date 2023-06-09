@@ -1,25 +1,23 @@
-.contacto__contenedor {
+.contacto__contenedor__principal {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 135vh;
   background: var(--color-rojoA);
+}
+
+.contacto__contenedor {
+  display: flex;
+  align-items: center;
+  height: 130vh;
 }
 
 .contacto__img {
   height: 450px;
-  width: 550px;
+  width: 500px;
 }
 
-.contacto__contenedor__formulario {
-  width: 45%;
-}
-
-/*********/
 .contacto__contenedor__form {
   width: 350px;
-  height: 480px;
+  height: 470px;
   border-radius: 0.75rem;
   background-color: rgba(17, 24, 39, 1);
   padding: 2rem;
@@ -72,7 +70,6 @@
 .contacto__form__textarea:focus {
   border-color: var(--color-azulPalido);
 }
-
 
 
 .contacto__form__button {
