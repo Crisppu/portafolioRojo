@@ -1,22 +1,16 @@
 @media screen and (max-width:858px) {
-.contacto__contenedor {
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    width:100%;
-    height: 100%;
-    background: var(--color-rojoA);
-  }
-  
-.contacto__img{
-display: none;
-}
-.contacto__contenedor__formulario {
-    width: 80%;
-  }
-.contacto__contenedor__form {
-    width: 100%;
-    height: 100%;
-  }
 
+    .contacto__contenedor__principal {
+        border-radius: 50px 50px;
+    }
+    .contacto__contenedor {
+       height: 700px;
+      }
+
+    .contacto__contenedor__img {
+        display: none;
+    }
+    .contacto__contenedor__form {
+        width: 300px;
+      }
 }

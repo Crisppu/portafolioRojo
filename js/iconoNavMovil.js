@@ -7,7 +7,6 @@ addEventListener("DOMContentLoaded", () => {
   });
   for (let i = 0; i < menuListaA.length; i++) {
     const element = menuListaA[i];
-    console.log(element);
     element.addEventListener("click", function() {
       menuLista.classList.toggle("show");
     });

@@ -16,12 +16,12 @@
 }
 
 .contacto__contenedor__form {
-  width: 350px;
-  height: 470px;
+  width: 26vw;
+  height: 75.2vh;
   border-radius: 0.75rem;
-  background-color: rgba(17, 24, 39, 1);
+  background-color:var(--color-negro);
   padding: 2rem;
-  color: rgba(243, 244, 246, 1);
+  color: var(--color-blanco);
 }
 
 .contacto__titulo {
@@ -60,7 +60,7 @@
   outline: 0;
   background-color: rgba(17, 24, 39, 1);
   padding: 0.75rem 1rem;
-  color: rgba(243, 244, 246, 1);
+  color: var(--color-blanco);
 }
 
 .contacto__form__input:focus {
