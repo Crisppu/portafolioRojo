@@ -3,9 +3,6 @@
         background-image: none;
     }
 
-    .skills__contenedor {
-        width: 100%;
-    }
 
     .skills__titulo {
         text-align: center;
@@ -13,7 +10,7 @@
 
     .skills__contenedor__listado {
         width: 400px;
-        justify-content: start;
+        justify-content: center;
     }
 
     .skills__card {

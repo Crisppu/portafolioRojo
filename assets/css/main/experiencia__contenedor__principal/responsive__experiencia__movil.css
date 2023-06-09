@@ -23,12 +23,12 @@
     }
 
     .experiencia__img__impar.activa {
-        display:block;
+        display:inline;
         animation: initial;
     }
 
     .experiencia__img__impar.activa1 {
-        display:block;
+        display:inline;
         animation: initial;
     }
 
