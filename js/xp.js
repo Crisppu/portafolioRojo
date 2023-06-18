@@ -6,31 +6,38 @@ function activarScrollPorElemento(section) {
     var contenedorImgA = document.querySelectorAll(".experiencia__img__impar");
     var elementoHijoImparA;
 
-   var anchoPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-   var pantallaMovil = 858;
-   if(anchoPantalla > pantallaMovil){
-     if (alturaContenedor.top < window.innerHeight && alturaContenedor.bottom > 0) {
-      // El elemento está visible en el viewport, activa tu lógica aquí
+    var anchoPantalla =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    var pantallaMovil = 858;
+    if (anchoPantalla > pantallaMovil) {
+      if (
+        alturaContenedor.top < window.innerHeight &&
+        alturaContenedor.bottom > 0
+      ) {
+        // El elemento está visible en el viewport, activa tu lógica aquí
 
-       for (var i = 0; i < contenedorImgA.length; i++) {
-        if (i % 2 == 0) {
+        for (var i = 0; i < contenedorImgA.length; i++) {
+          if (i % 2 == 0) {
+            elementoHijoImparA = contenedorImgA[i];
+            elementoHijoImparA.classList.add("activa");
+          } else {
+            elementoHijoImparA = contenedorImgA[i];
+            elementoHijoImparA.classList.add("activa1");
+          }
+        }
+      } else {
+        for (var i = 0; i < contenedorImgA.length; i++) {
           elementoHijoImparA = contenedorImgA[i];
-          elementoHijoImparA.classList.add("activa");
-        } else {
-          elementoHijoImparA = contenedorImgA[i];
-          elementoHijoImparA.classList.add("activa1");
+          elementoHijoImparA.classList.remove("activa");
+          elementoHijoImparA.classList.remove("activa1");
         }
       }
-      } else {
-      for (var i = 0; i < contenedorImgA.length; i++) {
-        elementoHijoImparA = contenedorImgA[i];
-        elementoHijoImparA.classList.remove("activa");
-        elementoHijoImparA.classList.remove("activa1");
-      }
+    }else{
+      
+    
     }
-
-   }
-
   }
 
   window.addEventListener("scroll", activar);
@@ -40,20 +47,6 @@ function activarScrollPorElemento(section) {
 
 // Ejemplo de uso
 activarScrollPorElemento(".experiencia__contenedor");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 function calcularAnchoPantalla() {
