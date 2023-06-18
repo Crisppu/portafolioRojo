@@ -6,10 +6,13 @@ function activarScrollPorElemento(section) {
     var contenedorImgA = document.querySelectorAll(".experiencia__img__impar");
     var elementoHijoImparA;
 
-    if (alturaContenedor.top < window.innerHeight && alturaContenedor.bottom > 0) {
+   var anchoPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+   var pantallaMovil = 858;
+   if(anchoPantalla > pantallaMovil){
+     if (alturaContenedor.top < window.innerHeight && alturaContenedor.bottom > 0) {
       // El elemento está visible en el viewport, activa tu lógica aquí
 
-      for (var i = 0; i < contenedorImgA.length; i++) {
+       for (var i = 0; i < contenedorImgA.length; i++) {
         if (i % 2 == 0) {
           elementoHijoImparA = contenedorImgA[i];
           elementoHijoImparA.classList.add("activa");
@@ -18,13 +21,16 @@ function activarScrollPorElemento(section) {
           elementoHijoImparA.classList.add("activa1");
         }
       }
-    } else {
+      } else {
       for (var i = 0; i < contenedorImgA.length; i++) {
         elementoHijoImparA = contenedorImgA[i];
         elementoHijoImparA.classList.remove("activa");
         elementoHijoImparA.classList.remove("activa1");
       }
     }
+
+   }
+
   }
 
   window.addEventListener("scroll", activar);
@@ -35,3 +41,30 @@ function activarScrollPorElemento(section) {
 // Ejemplo de uso
 activarScrollPorElemento(".experiencia__contenedor");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function calcularAnchoPantalla() {
+  var anchoPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var pantallaMovil = 858;
+  if(anchoPantalla > pantallaMovil){
+  
+  }
+
+  return anchoPantalla;
+}
+var ancho = calcularAnchoPantalla();
+console.log("Ancho de la pantalla: " + ancho);
+*/
