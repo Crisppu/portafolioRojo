@@ -7,6 +7,10 @@
        height: 800px;
       }
 
+    .contacto__contenedor__form {
+        height: 480px;
+      }
+
     .contacto__contenedor__img {
         display: none;
     }
