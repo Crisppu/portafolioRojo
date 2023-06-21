@@ -1,42 +1,43 @@
-function activarScrollPorElemento(section) {
-  var elemento = document.querySelector(section);
+({
+  plugins: ["jsdom-quokka-plugin"],
+  jsdom: {file: "index.html"} // Located in project root
+});
 
+const contenedorXp = document.querySelector("[data-contenedorXp]");
+
+function activarScrollPorElContenedor(section) {
   function activar() {
-    var alturaContenedor = elemento.getBoundingClientRect();
-    var contenedorImgA = document.querySelectorAll(".experiencia__img__impar");
-    var elementoHijoImparA;
+    var alturaContenedor = section.getBoundingClientRect();
+    var contenedorImagenesXp = document.querySelectorAll(".experiencia__img");
+    var elementoHijoImpar;
+    var elementoHijoPar;
 
-    var anchoPantalla =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth;
+
+    var anchoPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var pantallaMovil = 858;
     if (anchoPantalla > pantallaMovil) {
-      if (
-        alturaContenedor.top < window.innerHeight &&
-        alturaContenedor.bottom > 0
-      ) {
-        // El elemento está visible en el viewport, activa tu lógica aquí
-
-        for (var i = 0; i < contenedorImgA.length; i++) {
+      if (alturaContenedor.top < window.innerHeight && alturaContenedor.bottom > 0) {
+        for (let i = 0; i < contenedorImagenesXp.length; i++) {
           if (i % 2 == 0) {
-            elementoHijoImparA = contenedorImgA[i];
-            elementoHijoImparA.classList.add("activa");
+            elementoHijoPar = contenedorImagenesXp[i];
+            elementoHijoPar.classList.add("activa");
           } else {
-            elementoHijoImparA = contenedorImgA[i];
-            elementoHijoImparA.classList.add("activa1");
+            elementoHijoImpar = contenedorImagenesXp[i];
+            elementoHijoImpar.classList.add("activa1");
           }
         }
       } else {
-        for (var i = 0; i < contenedorImgA.length; i++) {
-          elementoHijoImparA = contenedorImgA[i];
-          elementoHijoImparA.classList.remove("activa");
-          elementoHijoImparA.classList.remove("activa1");
+        for (let i = 0; i < contenedorImagenesXp.length; i++) {
+          if (i % 2 == 0) {
+            elementoHijoPar = contenedorImagenesXp[i];
+            elementoHijoPar.classList.remove("activa");
+          } else {
+            elementoHijoImpar = contenedorImagenesXp[i];
+            elementoHijoImpar.classList.remove("activa1");
+          }
         }
+
       }
-    }else{
-      
-    
     }
   }
 
@@ -46,18 +47,40 @@ function activarScrollPorElemento(section) {
 }
 
 // Ejemplo de uso
-activarScrollPorElemento(".experiencia__contenedor");
-
+activarScrollPorElContenedor(contenedorXp);
+console.log(contenedorXp);
 /*
-function calcularAnchoPantalla() {
-  var anchoPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  var pantallaMovil = 858;
-  if(anchoPantalla > pantallaMovil){
-  
-  }
+window.addEventListener("scroll", function() {
+  var alturaContenedor = contenedorXp.getBoundingClientRect();
+  var contenedorImgA = document.querySelectorAll(".experiencia__img__impar");
+  var elementoHijoImparA;
 
-  return anchoPantalla;
-}
-var ancho = calcularAnchoPantalla();
-console.log("Ancho de la pantalla: " + ancho);
-*/
+  var anchoPantalla =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  var pantallaMovil = 858;
+  if (anchoPantalla > pantallaMovil) {
+    if (
+      alturaContenedor.top < window.innerHeight &&
+      alturaContenedor.bottom > 0
+    ) {
+      for (var i = 0; i < contenedorImgA.length; i++) {
+        if (i % 2 == 0) {
+          elementoHijoImparA = contenedorImgA[i];
+          elementoHijoImparA.classList.add("activa");
+        } else {
+          elementoHijoImparA = contenedorImgA[i];
+          elementoHijoImparA.classList.add("activa1");
+        }
+      }
+    } else {
+      for (var i = 0; i < contenedorImgA.length; i++) {
+        elementoHijoImparA = contenedorImgA[i];
+        elementoHijoImparA.classList.remove("activa");
+        elementoHijoImparA.classList.remove("activa1");
+      }
+    }
+  }
+  console.log(anchoPantalla)
+});*/

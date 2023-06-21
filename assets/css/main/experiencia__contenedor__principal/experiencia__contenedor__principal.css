@@ -26,11 +26,11 @@
     flex-direction: row-reverse;
 }
 
-.experiencia__img__impar {
+.experiencia__img {
     display: none;
 }
 
-.experiencia__img__impar.activa {
+.experiencia__img.activa {
     display:flow-root;
     animation: slide-in-left 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     -webkit-animation: slide-in-left 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -55,7 +55,7 @@
     }
 }
 
-.experiencia__img__impar.activa1 {
+.experiencia__img.activa1 {
     display:flow-root;
     animation: slide-in-right 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     -webkit-animation: slide-in-right 5.5s alternate cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
