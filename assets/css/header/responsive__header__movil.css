@@ -7,7 +7,7 @@
 
 
     .header__contenedor {
-        height: 20vh;
+        height: 15vh;
     }
 
 
@@ -28,7 +28,7 @@
     .menu__lista {
         position: fixed;
         width: 100%;
-        height: calc(100vh - 20vh);
+        height: calc(100vh - 15vh);
         top: -100%;
         transition: all .4s;
         -webkit-transition: all .4s;
@@ -36,9 +36,8 @@
         -ms-transition: all .4s;
         -o-transition: all .4s;
         flex-direction: column;
+        justify-content: flex-start;
         background: var(--color-blanco);
-
-
     }
 
     .menu__lista__item {
